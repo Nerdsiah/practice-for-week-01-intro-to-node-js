@@ -1,5 +1,5 @@
 /******************************************************************************
-Write a function oddRange(end) that takes in a number and returns an array 
+Write a function oddRange(end) that takes in a number and returns an array
 containing all positive odd numbers up to `end`.
 
 Examples:
@@ -9,7 +9,14 @@ oddRange(6); // => [ 1, 3, 5 ]
 *******************************************************************************/
 
 function oddRange(end) {
-  // Your code here
+  let newArr = [];
+
+  for (let i = 1; i <= end; i++) {
+    if (i % 2 !== 0) {
+      newArr.push(i);
+    }
+  }
+  return newArr;
 }
 
 /****************** DO NOT MODIFY ANYTHING UNDER THIS  LINE ******************/

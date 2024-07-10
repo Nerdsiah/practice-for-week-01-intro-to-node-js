@@ -9,7 +9,13 @@ tripler([4, 1, 7]); // => [ 12, 3, 21 ]
 *******************************************************************************/
 
 function tripler(array) {
-  // Your code here
+  let newArr = [];
+
+  for (let i = 0; i < array.length; i++) {
+    let num = array[i];
+    newArr.push(num * 3);
+  }
+  return newArr;
 }
 
 /****************** DO NOT MODIFY ANYTHING UNDER THIS  LINE ******************/

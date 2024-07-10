@@ -11,7 +11,19 @@ intersect(['a', 'b', 'c'], ['x', 'y', 'z']) => []
 *******************************************************************************/
 
 function intersect(arr1, arr2) {
-  // Your code here
+  let newArr = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    let char1 = arr1[i];
+    for (let j = 0; j < arr2.length; j++) {
+      let char2 = arr2[j];
+
+      if (char1 === char2) {
+        newArr.push(char1);
+      }
+    }
+  }
+  return newArr;
 }
 
 /****************** DO NOT MODIFY ANYTHING UNDER THIS  LINE ******************/

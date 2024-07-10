@@ -9,7 +9,19 @@ fuzzBizz(30) => [ 2, 4, 6, 7, 8, 10, 12, 16, 18, 20, 21, 22, 24, 26 ]
 *******************************************************************************/
 
 function fuzzBizz(max) {
-  // Your code here
+  let newArr = [];
+
+  for (let i = 0; i < max; i++) {
+    let num = i;
+
+    if (num % 2 === 0 && num % 7 !== 0) {
+      newArr.push(num);
+    }
+    else if (num % 2 !== 0 && num % 7 === 0) {
+      newArr.push(num);
+    }
+  }
+  return newArr;
 }
 
 /****************** DO NOT MODIFY ANYTHING UNDER THIS  LINE ******************/
